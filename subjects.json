@@ -6,7 +6,12 @@
             "description":"The student will develop knowledge and skills in managing ICT projects and systems. The student will also research into established frameworks that are relevant to current industry trends.",
             "credits":15,
             "compulsory":true,
-            "offer":"2020.01",
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -17,7 +22,8 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }        
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":"Orlando Basas"}
         },
         {
             "code":"IT802",
@@ -25,7 +31,12 @@
             "description":"The student will develop knowledge and skills in critiquing and undertaking research, assessing social impacts of ICT and analysing ethical issues in ICT practice.",
             "credits":15,
             "compulsory":true,
-            "offer":"2020.01",
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -36,7 +47,8 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":"Orlando Basas"}
         },
         {
             "code":"IT803",
@@ -44,7 +56,12 @@
             "description":"The student will develop expertise in preparing research proposals, including reviewing relevant literature, selecting a methodology and exploring ethical issues.",
             "credits":15,
             "compulsory":true,
-            "offer":"2020.01",
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -55,30 +72,32 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":["802"],
+            "class": {"room": "IT801", "teacher":"Orlando Basas"}
+
         },
         {
             "code":"IT901",
             "name":"Research Project",
             "description":"The student will develop expertise in conducting applied research that informs professional ICT practice. and an approved selection of level 8 papers worth at least 90 credits from the following list:",
             "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
+            "compulsory":false,
+            "offer":[],
             "pathway": [
                 {
                     "cod": "1",
                     "description": "The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":""}
         },
         {
             "code":"IT811",
             "name":"Business Analysis",
             "description":"The student will develop knowledge and skills in analysing the structure and function of organisations in order to improve efficiency and productivity using ICT.",
             "credits":15,
-            "offer":"2020.01",
-            "semester":"01",
+            "offer":[],
             "pathway": [
                 {
                     "cod": "1",
@@ -89,6 +108,7 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
+            "prerequisite":[],
             "class": {"room": "", "teacher":""}
         },
         {
@@ -96,8 +116,7 @@
             "name":"Business Intelligence",
             "description":"The student will develop knowledge and skills in analysing the strategic use of data warehousing, data mining and data analysis in order to obtain business intelligence.",
             "credits":15,
-            "offer":"2020.01",
-            "semester":"01",
+            "offer":[],
             "pathway": [
                 {
                     "cod": "1",
@@ -108,6 +127,7 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
+            "prerequisite":[],
             "class": {"room": "", "teacher":""}
         },
         {
@@ -115,18 +135,36 @@
             "name":"Research ProjectICT Infrastructure",
             "description":"The student will develop knowledge about various aspects of ICT infrastructure, including emerging digital technologies.",
             "credits":15,
-            "offer":"2020.01",
-            "semester":"01",
-            "pathway": [1,2],
-            "class": {"room": "", "teacher":""}
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
+            "pathway": [
+                {
+                    "cod": "1",
+                    "description": "The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:"
+                },
+                {
+                    "cod": "2",
+                    "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
+                }
+            ],  
+            "prerequisite":[],             
+            "class": {"room": "IT801", "teacher":"Orlando Basas"}
         },
         {
             "code":"IT814",
             "name":"ICT Quality",
             "description":"The student will develop knowledge and skills in the application of methods and techniques used in ICT quality assurance and testing.",
             "credits":15,
-            "offer":"2020.01",
-            "semester":"01",
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -137,15 +175,20 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":"John Mumford"}
         },
         {
             "code":"IT815",
             "name":"ICT Security",
             "description":"The student will develop knowledge of the impact of security on an ICT infrastructure, research into the ethical and legal implications of ICT security and cybercrime, and identify appropriate investigation strategies in the light of emerging digital technologies.",
             "credits":15,
-            "offer":"2020.01",
-            "semester":"01",
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -156,15 +199,21 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":"Abdul Rehman"}
         },
         {
             "code":"IT816",
             "name":"Mobile Application Development",
             "description":"The student will develop knowledge and skills required to create, market and deploy a mobile application.",
             "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
+            "compulsory":false,
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -175,15 +224,16 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
-            "class": {"room": "", "teacher":""}
+            "prerequisite":[],
+            "class": {"room": "IT801", "teacher":"Orlando Basas"}
         },
         {
             "code":"IT817",
             "name":"Web Application Development",
             "description":"The student will develop knowledge and skills required to develop web services and applications.",
             "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
+            "compulsory":false,
+            "offer":[],
             "pathway": [
                 {
                     "cod": "1",
@@ -194,6 +244,7 @@
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
+            "prerequisite":[],
             "class": {"room": "", "teacher":""}
         },
         {
@@ -201,18 +252,13 @@
             "name":"Special Topic",
             "description":"The student will critically examine currentdevelopments and emerging issues in a specified topic area.",
             "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
-            "pathway": [1,2],
-            "class": {"room": "", "teacher":""}
-        },
-        {
-            "code":"IT819",
-            "name":"Applied Project",
-            "description":"The student will be able to identify and apply appropriate ICT techniques and technologies to solve a non-trivial problem in a business, educational, industrial or similar setting.",
-            "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
+            "compulsory":false,
+            "offer":[
+                {
+                    "year":"2020",
+                    "semester":"01"
+                }
+            ],
             "pathway": [
                 {
                     "cod": "1",
@@ -221,8 +267,25 @@
                 {
                     "cod": "2",
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
+                }
+            ],   
+            "prerequisite":[],            
+            "class": {"room": "IT801", "teacher":"Abdul Rehman"}
+        },
+        {
+            "code":"IT819",
+            "name":"Applied Project",
+            "description":"The student will be able to identify and apply appropriate ICT techniques and technologies to solve a non-trivial problem in a business, educational, industrial or similar setting.",
+            "credits":15,
+            "compulsory":false,
+            "offer":[],
+            "pathway": [
+                {
+                    "cod": "2",
+                    "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
                 }               
             ],
+            "prerequisite":[],
             "class": {"room": "", "teacher":""}
         },
         {
@@ -230,14 +293,19 @@
             "name":"Thesis",
             "description":"The student will develop expertise in conducting publishable research about applied ICT.  and an approved selection of level 8 papers worth at least 45 credits from the following list (each worth 15 credits, except for 819):",
             "credits":15,
-            "compulsory":true,
-            "offer":"2020.01",
+            "compulsory":false,
+            "offer":[],
             "pathway": [
+                {
+                    "cod": "1",
+                    "description": "The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:"
+                },
                 {
                     "cod": "2",
                     "description": "The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:"
-                }               
-            ],
+                }
+            ], 
+            "prerequisite":[],              
             "class": {"room": "", "teacher":""}
         }
     ]
