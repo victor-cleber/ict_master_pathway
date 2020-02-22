@@ -1,175 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>SIT 2020 - ICT Pathway</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  </style>
-</head>
-<body>
-<div id="data">
-</div>
+    <head>
+        <title>SIT 2020 - ICT Pathway</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal">2020 Timetable semester 1 (10 February - 26 June)</h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="#">Features</a>
+                <a class="p-2 text-dark" href="#">Enterprise</a>
+                <a class="p-2 text-dark" href="#">Support</a>
+                <a class="p-2 text-dark" href="#">Pricing</a>
+            </nav>
+            <a class="btn btn-outline-primary" href="#">Sign up</a>
+        </div>
+        <div class="container">
 
-<div class="container">
-    <div class="row">
-
-
-        <div class="col-sm-12">
-            <h2>2020 Timetable semester 1</h2>
-            <p>Semester date 10 February - 26 June</p>
-            <div class="btn-group btn-group-lg">
-                <button type="button" class="btn btn-primary" id="pathway1">Pathway 1</button>
-                <button type="button" class="btn btn-primary" id="pathway2">Pathway 2</button>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="btn-group btn-group-lg">
+                        <button type="button" class="btn btn-primary" id="pathway1">Pathway 1</button>
+                        <button type="button" class="btn btn-primary" id="pathway2">Pathway 2</button>                
+                    </div>
+                </div>
+                <div class="col-md-8">
+                        <p id='pathway_description'></p>
+                </div>
+                <hr class="mb-12">                    
             </div>
-            <hr class="mb-2">
-            <p>The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:</p>
-            <br>
-            <table class="table .table-bordered">
-                <thead>
-                <tr>
-                <th></th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>09 am</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>10 am</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>11 am</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>noon</td>
-                    <th></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>01 pm</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>02 pm</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>03 pm</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>04 pm</td>
-                    <th>Monday</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td>john@example.com</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <hr class="mb-2">
-        <div class="row" >
-            <div class="d-block my-3">                
+            <div class="row">
+                <div class="col-md-4">
+                    <br>
+                    <br>         
+                    <div id="userData" >    
+                        <br>
+                        <br>            
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <table class="table .table-bordered">
+                        <thead>
+                        <tr>
+                        <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>09 am</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>10 am</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>11 am</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01 pm</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>02 pm</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>03 pm</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>04 pm</td>
+                            <td>Monday</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>        
             </div>
-        </div>
-    </div>
- 
-    <hr class="mb-2">
 
+           
 
-    <div class="row">
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-3">
-            <br>
-            <br>
-            <br>
-            <p>(JM) John Mumford</p>
-            <p>(JM) John Mumford</p>
-            <p>(JM) John Mumford</p>
-            <p>(JM) John Mumford</p>        
-        </div>
-        <div id="userdata" class="col-sm-8">    
-            <br>
-            <br>            
-        </div>
-    </div>    
-   
-
-   
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <script type='text/javascript' src='subjects.json'></script>
     <script>
         $(document).ready(function(){
+            url = 'subjects.json';
             var pathway1_subjects = [];
             var pathway2_subjects = [];
-            
+            var userData = $('#userData');    
+
+                    
+
             $('#pathway1').click(function(){                
                 var pathway = $(this).attr('id');
-                load_subjects(pathway)                
+                var pathway1_subjects = [];
+                $('#pathway_description').html('<p>The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:</p>');
+                load_subjects(pathway);                
             });
 
             $('#pathway2').click(function(){                
                 var pathway = $(this).attr('id');
-                load_subjects(pathway)                
+                $('#pathway_description').html('<p>The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:</p>');
+                load_subjects(pathway);                
             });
 
             function load_subjects(path){
-                //alert("pathway1: " + path);
-                $.getJSON('subjects.json', function(result){
-                    $.each(result, function(i, field){                    
+                //alert("pathway1: " + path);            
+                
+                $.getJSON(url, function(data, status){
+                // if (status === 200) {
+                        userData.empty();  
+                        console.log(data)
+                        data.forEach(buildPathway);
+                        
+                        function buildPathway(value) {
+                            console.log(value.pathway)                            
+                            if(value.pathway[0]['cod'] == '1'){                                
+                                pathway1_subjects.push(value)                                
+                                console.log(pathway1_subjects);
+                           
+                                var btn = '<div class="custom-control custom-checkbox">'+
+                                '<input type="checkbox" class="custom-control-input" id="' + value.code + '">' +
+                                '<label class="custom-control-label" for="IT801">' + value.code  + ' - ' + value.name + '</label> </div>'                    
+                                $(btn).appendTo(userData);
+                            }
+                        };
+                    });
+                
+                };   
+        });
+
+
+/*
+
+ <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <br>
+                    <br>
+                    <p>(JM) John Mumford</p>
+                    <p>(JM) John Mumford</p>
+                    <p>(JM) John Mumford</p>
+                    <p>(JM) John Mumford</p>        
+                </div>            
+            </div>    
+        </div>  
+
+
+        if (items.length) {
+        var content = '<li>' + items.join('</li><li>') + '</li>';
+        var list = $('<ul />').html(content);
+        showData.append(list);
+        
+    showData.text('Loading the JSON file.');
+
+
+            
+            $.each(result, function(i, field){       
+                        console.log(field);             
                         var btn = '<div class="custom-control custom-checkbox">'+
                             '<input type="checkbox" class="custom-control-input" id="' +field.code + '">' +
                             '<label class="custom-control-label" for="IT801">' + field.name + '</label> </div>'                    
                         $(btn).appendTo("#userdata");
                 });
-            });        
-                
-            }
+*/   
 
-            
-            
-            
-        });  
-  </script>
-</body>
+
+    </script>
+    </body>
 </html>
