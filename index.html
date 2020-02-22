@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Pathway</title>
-    </head>
+<html lang="en">
+<head>
+  <title>SIT 2020 - ICT Pathway</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+<div id="data">
+</div>
 
-    <body>
-        Content of the document......
-    </body>
+<div class="container">
+    <div class="row">
 
+
+        <div class="col-sm-12">
+            <h2>2020 Timetable semester 1</h2>
+            <p>Semester date 10 February - 26 June</p>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary" id="pathway1">Pathway 1</button>
+                <button type="button" class="btn btn-primary" id="pathway2">Pathway 2</button>
+            </div>
+            <hr class="mb-2">
+            <p>The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:</p>
+            <br>
+            <table class="table .table-bordered">
+                <thead>
+                <tr>
+                <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>09 am</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>10 am</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>11 am</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>noon</td>
+                    <th></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01 pm</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>02 pm</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>03 pm</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>04 pm</td>
+                    <th>Monday</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr class="mb-2">
+        <div class="row" >
+            <div class="d-block my-3">                
+            </div>
+        </div>
+    </div>
+ 
+    <hr class="mb-2">
+
+
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3">
+            <br>
+            <br>
+            <br>
+            <p>(JM) John Mumford</p>
+            <p>(JM) John Mumford</p>
+            <p>(JM) John Mumford</p>
+            <p>(JM) John Mumford</p>        
+        </div>
+        <div id="userdata" class="col-sm-8">    
+            <br>
+            <br>            
+        </div>
+    </div>    
+   
+
+   
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type='text/javascript' src='subjects.json'></script>
+    <script>
+        $(document).ready(function(){
+            var pathway1_subjects = [];
+            var pathway2_subjects = [];
+            
+            $('#pathway1').click(function(){                
+                var pathway = $(this).attr('id');
+                load_subjects(pathway)                
+            });
+
+            $('#pathway2').click(function(){                
+                var pathway = $(this).attr('id');
+                load_subjects(pathway)                
+            });
+
+            function load_subjects(path){
+                //alert("pathway1: " + path);
+                $.getJSON('subjects.json', function(result){
+                    $.each(result, function(i, field){                    
+                        var btn = '<div class="custom-control custom-checkbox">'+
+                            '<input type="checkbox" class="custom-control-input" id="' +field.code + '">' +
+                            '<label class="custom-control-label" for="IT801">' + field.name + '</label> </div>'                    
+                        $(btn).appendTo("#userdata");
+                });
+            });        
+                
+            }
+
+            
+            
+            
+        });  
+  </script>
+</body>
 </html>
