@@ -142,49 +142,76 @@
             var pathway2_subjects = [];
             var userData = $('#userData');    
 
-                    
-
             $('#pathway1').click(function(){                
-                var pathway = $(this).attr('id');
-                var pathway1_subjects = [];
-                $('#pathway_description').html('<p>The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:</p>');
+                var pathway = $(this).attr('id');  
                 load_subjects(pathway);                
             });
 
             $('#pathway2').click(function(){                
                 var pathway = $(this).attr('id');
-                $('#pathway_description').html('<p>The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:</p>');
+            //    $('#pathway_description').html('<p>The second pathway is designed for students who want to undertake a more substantial research project and consists of four compulsory components:</p>');
                 load_subjects(pathway);                
             });
 
-            function load_subjects(path){
-                //alert("pathway1: " + path);            
-                
-                $.getJSON(url, function(data, status){
+            function load_subjects(pathway){
+                //alert("pathway1: " + path);  
+                //carregando os dados do json
+                $.getJSON(url, function(subjects, status){
                 // if (status === 200) {
-                        userData.empty();  
-                        console.log(data)
-                        data.forEach(buildPathway);
+                    //console.log(data);
+                    var pathway1_subjects = [];
+                    //loop for each element
+                    function buildPathway(subject) {
+                        console.clear()
+                        //console.log(subjects);
+                        //console.log(value.pathway)      
                         
-                        function buildPathway(value) {
-                            console.log(value.pathway)                            
-                            if(value.pathway[0]['cod'] == '1'){                                
-                                pathway1_subjects.push(value)                                
-                                console.log(pathway1_subjects);
-                           
+                            if(subject.pathway[0]['cod'] == '1'){                                
+                                //$("#userData").empty();  
+                                pathway1_subjects.push(subject)                                
+                                //console.log(pathway1_subjects);                               
+                            };
+                        //};
+                    };
+
+                    subjects.forEach(buildPathway);
+
+                    //console.log(pathway1_subjects[0].semester)
+                    //console.log(pathway1_subjects.length)
+
+                    //for (var subject in pathway1_subjects){
+                    for ( i=0; i < pathway1_subjects.length; i++ ){
+                        console.log(pathway1_subjects[i])
+                        //console.log(subject.semester)
+                        if(pathway1_subjects[i].semester == "01"){ 
+                            if(pathway1_subjects[i].compulsory == true){ 
+                            //console.log('oferecido');
+                                $('#pathway_description').html('<p>The first pathway is designed for students who want to undertake more course work and consists of four compulsory components:</p>');
                                 var btn = '<div class="custom-control custom-checkbox">'+
-                                '<input type="checkbox" class="custom-control-input" id="' + value.code + '">' +
-                                '<label class="custom-control-label" for="' + value.code  + '">' + value.code  + ' - ' + value.name + '</label> </div>'                    
-                                $(btn).appendTo(userData);
+                                '<input type="checkbox" class="custom-control-input" checked id="' + pathway1_subjects[i].code + '">' +
+                                '<label class="custom-control-label" for="' + pathway1_subjects[i].code  + '">' + pathway1_subjects[i].code  + ' - ' + pathway1_subjects[i].name + '</label> </div>'
+                            }else{
+                                var btn = '<div class="custom-control custom-checkbox">'+
+                                '<input type="checkbox" class="custom-control-input" id="' + pathway1_subjects[i].code + '">' +
+                                '<label class="custom-control-label" for="' + pathway1_subjects[i].code  + '">' + pathway1_subjects[i].code  + ' - ' + pathway1_subjects[i].name + '</label> </div>'                    
                             }
-                        };
-                    });
-                
-                };   
+                            $(btn).appendTo(userData);
+                        }else{
+                           // console.log('subject.semester')
+                           // console.log(subject.semester)
+                            }
+                    
+                    }
+                });
+            };   
         });
 
 
 /*
+
+
+//populing the table
+https://stackoverflow.com/questions/45436241/populate-jq-grid-from-json-string-javascript/45513104
 
  <div class="row">
                 <div class="col-sm-1">

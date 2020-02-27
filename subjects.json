@@ -6,12 +6,7 @@
           "description": "The student will develop knowledge and skills in managing ICT projects and systems. The student will also research into established frameworks that are relevant to current industry trends.",
           "credits": 15,
           "compulsory": true,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -34,12 +29,7 @@
           "description": "The student will develop knowledge and skills in critiquing and undertaking research, assessing social impacts of ICT and analysing ethical issues in ICT practice.",
           "credits": 15,
           "compulsory": true,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -62,12 +52,7 @@
           "description": "The student will develop expertise in preparing research proposals, including reviewing relevant literature, selecting a methodology and exploring ethical issues.",
           "credits": 15,
           "compulsory": true,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -92,7 +77,7 @@
           "description": "The student will develop expertise in conducting applied research that informs professional ICT practice. and an approved selection of level 8 papers worth at least 90 credits from the following list:",
           "credits": 15,
           "compulsory": false,
-          "offer": [],
+          "semester": "",
           "pathway": [
              {
                 "cod": "1",
@@ -110,7 +95,8 @@
           "name": "Business Analysis",
           "description": "The student will develop knowledge and skills in analysing the structure and function of organisations in order to improve efficiency and productivity using ICT.",
           "credits": 15,
-          "offer": [],
+          "compulsory": false,
+          "semester": "",
           "pathway": [
              {
                 "cod": "1",
@@ -132,7 +118,8 @@
           "name": "Business Intelligence",
           "description": "The student will develop knowledge and skills in analysing the strategic use of data warehousing, data mining and data analysis in order to obtain business intelligence.",
           "credits": 15,
-          "offer": [],
+          "compulsory": false,
+          "semester": "",
           "pathway": [
              {
                 "cod": "1",
@@ -154,12 +141,8 @@
           "name": "Research ProjectICT Infrastructure",
           "description": "The student will develop knowledge about various aspects of ICT infrastructure, including emerging digital technologies.",
           "credits": 15,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "compulsory": false,
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -181,12 +164,8 @@
           "name": "ICT Quality",
           "description": "The student will develop knowledge and skills in the application of methods and techniques used in ICT quality assurance and testing.",
           "credits": 15,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "compulsory": false,
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -208,12 +187,8 @@
           "name": "ICT Security",
           "description": "The student will develop knowledge of the impact of security on an ICT infrastructure, research into the ethical and legal implications of ICT security and cybercrime, and identify appropriate investigation strategies in the light of emerging digital technologies.",
           "credits": 15,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "compulsory": false,
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -236,12 +211,7 @@
           "description": "The student will develop knowledge and skills required to create, market and deploy a mobile application.",
           "credits": 15,
           "compulsory": false,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -264,7 +234,7 @@
           "description": "The student will develop knowledge and skills required to develop web services and applications.",
           "credits": 15,
           "compulsory": false,
-          "offer": [],
+          "semester": "",
           "pathway": [
              {
                 "cod": "1",
@@ -287,12 +257,7 @@
           "description": "The student will critically examine currentdevelopments and emerging issues in a specified topic area.",
           "credits": 15,
           "compulsory": false,
-          "offer": [
-             {
-                "year": "2020",
-                "semester": "01"
-             }
-          ],
+          "semester": "01",
           "pathway": [
              {
                 "cod": "1",
@@ -315,7 +280,7 @@
           "description": "The student will be able to identify and apply appropriate ICT techniques and technologies to solve a non-trivial problem in a business, educational, industrial or similar setting.",
           "credits": 15,
           "compulsory": false,
-          "offer": [],
+          "semester": "",
           "pathway": [
              {
                 "cod": "2",
@@ -334,7 +299,7 @@
           "description": "The student will develop expertise in conducting publishable research about applied ICT.  and an approved selection of level 8 papers worth at least 45 credits from the following list (each worth 15 credits, except for 819):",
           "credits": 15,
           "compulsory": false,
-          "offer": [],
+          "semester": "",
           "pathway": [
              {
                 "cod": "1",
